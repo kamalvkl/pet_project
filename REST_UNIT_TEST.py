@@ -13,7 +13,6 @@ def TC_BRINGUP():
         print(cookie)
 
 def UNIT_TEST():
-        print(resp)
         url = input("Enter the URL:")
         method = input("Enter the method:")
         auth = input("Enter the auth flag(1/0):")
@@ -27,10 +26,6 @@ def UNIT_TEST():
            task_status = resp.call_api("GET", url, auth = 0)
         else:
            print("TASK  output skipped as per the user request")
-
-def TASK_TEST():
-        url = input("Enter the URL:")
-        task_status = resp.call_api("GET", url, auth = 0)
 
 class REST_API:
  def __init__(self, **kwargs):
